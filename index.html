@@ -4,15 +4,69 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Type your title here</title>
+    <title>Rock Paper Scissors</title>
     <!-- Bootstrap Styles-->
     <link rel="stylesheet" href="resources/styles/bootstrap.min.css">
     <link rel="stylesheet" href="resources/styles/styles.css" />
+   
 </head>
 
 <body>
     <div class="container">
         <!-- WORK FROM INSIDE THIS CONTAINER-->
+        <h1  title="Rock Paper Scissors">
+            Rock Paper Scissors
+       </h1>
+       <div id="welcome-screen" class="form-group">
+            <form id="name-form">
+                <div>
+                    <label Ben Schnetzer for="username"></label>>
+                    Type your name:
+                       
+                    </label>
+                    <input  type="text" id="username" name="username">
+                    
+                    </input>
+                </div>
+                <button id="start-game-button" class="btn btn-primary">
+                    Start Game
+                </button>
+
+            </form>
+
+       </div>
+       <div id="game-form" class="form-control">
+            <div id="score-tally">
+                <p id="score">
+                    User: 0 v CPU: 0
+                </p>
+
+            </div>
+            <form id="game-form">
+                <div>
+                    <label  for="user-selection">
+                        Select your choice
+                        <select name="user-selection" id="user-selection" class="custom-select">
+                        <option value="Rock">Rock</option>
+                        <option value="Paper">Paper</option>
+                        <option value="Scissors">Scissors</option>
+                        </select>
+
+                        
+                        
+                    </label>
+                </div>
+                <button id="go-button" class="btn btn-success">
+                    Submit
+                </button>
+
+            </form>
+            <p id="game-history">
+
+            </p>
+        
+      
+        </div>
 
     </div>
 
